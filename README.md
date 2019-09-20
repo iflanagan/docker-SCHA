@@ -1,3 +1,13 @@
+
+Pre-requisites:
+
+Intall Docker
+NOTE: These instructions are for using docker on Mac or linux so the commands may vary on a windows system.
+
+Disclaimer: Code provided is not supported by Saucelabs and may need to be updated from time to time
+as things change.
+
+
 The commands below Create a HIGH AVAILABILITY SAUCE CONNECT TUNNELS. NOTE you can open two terminal windows and execute the same command to run to truly obtain a HA environment. 
 
 
@@ -7,8 +17,7 @@ iflanagan/sauceconnectha
 
 GitHub Project
 
-https://github.com/iflanagan/docker-sauce-connect
-
+https://github.com/iflanagan/docker-SCHA.git
  
 
 docker run -it iflanagan/sauceconnectha:first_version <sauce_username> <sauce_access_key> Web <TunnelIdentifierName>
