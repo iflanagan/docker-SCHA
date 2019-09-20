@@ -8,6 +8,19 @@ Disclaimer: Code provided is not supported by Saucelabs and may need to be updat
 as things change.
 
 
+Also if you don’t want to pass the sauce_username and access key you can always export as environment variables. On linux or Mac edit the ~/.bash_profile and add the following lines
+
+export SAUCE_USERNAME=<sauce_username>
+export SAUCE_ACCESS_KEY=<sauce_access_key>
+
+source ~/.bash_profile
+
+Now you can execute the command this way
+
+docker run -it iflanagan/sauceconnectha:first_version $SAUCE_USERNAME $SAUCE_ACCESS_KEY Web <TunnelIdentifierName>
+
+
+
 The commands below Create a HIGH AVAILABILITY SAUCE CONNECT TUNNELS. NOTE you can open two terminal windows and execute the same command to run to truly obtain a HA environment. 
 
 
@@ -54,6 +67,4 @@ docker build -t <imagename> .
 docker tag <imagename> <dockeraccount>/<Dockerproject>:<tagname>
 docker login
 docker push  <dockeraccount>/<Dockerproject>:<tagname>
-
-
 
